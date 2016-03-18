@@ -7,3 +7,5 @@ from .models import Post, Comment
 #     return render(request, 'blog/post_list.html')
 
 post_list = ListView.as_view(model=Post)
+
+post_detail = DetailView.as_view(model=Post)
